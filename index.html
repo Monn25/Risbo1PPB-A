@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Penyuluhan pertanian untuk membantu petani dengan informasi terkini.">
+    <meta name="keywords" content="penyuluhan pertanian, petani, teknologi pertanian, pelatihan pertanian">
+    <meta name="author" content="Polbangtan Yoma">
+    <title>Penyuluhan Pertanian</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #b5e1a7; /* Hijau Telur Asin */
+            color: #333;
+            background-image: url('farm-background.jpg'); /* Replace with your image file */
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Navigation Bar */
+        header {
+            background-color: #4CAF50;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav ul li a:hover {
+            color: #d3e1b1; /* Light green hover color */
+        }
+
+        /* Home Section */
+        .hero {
+            background-color: rgba(75, 175, 75, 0.7); /* Semi-transparent green background */
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom: 3px solid #fff;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin: 20px 0;
+        }
+
+        button {
+            background-color: #f0e68c; /* Light yellow for button */
+            color: #4CAF50;
+            padding: 12px 25px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #d3e1b1; /* Light green hover */
+        }
+
+        /* About Section */
+        #about {
+            background-color: #ffffff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #about h2 {
+            color: #4CAF50;
+            font-size: 32px;
+        }
+
+        #about p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        /* Services Section */
+        #services {
+            background-color: #d3e1b1; /* Light green background for the services section */
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        #services h2 {
+            color: #4CAF50;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .service-item {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            margin: 20px auto;
+        }
+
+        .service-item h3 {
+            font-size: 24px;
+            color: #4CAF50;
+        }
+
+        .service-item p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* Contact Section */
+        #contact {
+            background-color: #ffffff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #contact h2 {
+            color: #4CAF50;
+            font-size: 32px;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        form button:hover {
+            background-color: #45a049;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            .service-item {
+                max-width: 90%;
+            }
+
+            form input, form textarea {
+                font-size: 14px;
+            }
+
+            form button {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#services">Layanan</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <h1>Selamat datang di Laman Penyuluhan Pertanian</h1>
+        <p>Membantu dan mendukung petani berupaya meningkatkan skill keterampilan dan inovasi modern.</p>
+        <button onclick="window.location.href='#services'">Pelajari Lebih Lanjut</button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>Tentang Kami</h2>
+        <p>Kami adalah organisasi penyuluhan pertanian yang bertujuan untuk memberikan informasi dan pelatihan bagi petani guna meningkatkan hasil pertanian dan keberlanjutan pertanian di Indonesia.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Layanan</h2>
+        <div class="service-item">
+            <h3>Pelatihan Pertanian</h3>
+            <p>Pelatihan untuk meningkatkan kemampuan petani dalam bidang pertanian organik dan teknologi terbaru.</p>
+        </div>
+        <div class="service-item">
+            <h3>Konsultasi Pertanian</h3>
+            <p>Memberikan konsultasi terkait dengan masalah pertanian yang dihadapi oleh petani di lapangan.</p>
+        </div>
+        <div class="service-item">
+            <h3>Distribusi Benih Berkualitas</h3>
+            <p>Menyediakan benih unggul yang dapat membantu meningkatkan hasil panen petani.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Hubungi Kami</h2>
+        <p>Jika Anda memiliki pertanyaan atau ingin bergabung dengan kami, silakan menghubungi kami melalui form di bawah ini.</p>
+        <form id="contactForm">
+            <input type="text" id="name" name="name" placeholder="Nama" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <textarea id="message" name="message" placeholder="Pesan" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+ <!-- Additional Section with Image -->
+ <section id="farm-image" style="text-align: center; padding: 20px;">
+    <h2>Potret Kehidupan Petani</h2>
+    <img src="https://images.pexels.com/photos/1713784/pexels-photo-1713784.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" 
+    alt="Manusia mendorong mesin beroda ke perairan" 
+    style="max-width: 100%; border-radius: 8px;">
+
+    <img src="https://images.pexels.com/photos/12520941/pexels-photo-12520941.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" 
+    alt="Foto oleh Danang DKW dari Pexels" 
+    style="max-width: 100%; border-radius: 8px;">
+
+    <img src="https://images.pexels.com/photos/3739609/pexels-photo-3739609.jpeg" 
+     alt="Moncong kambing dan domba di kandang kayu" 
+     style="max-width: 100%; border-radius: 8px;">
+
+    <p>Semangat petani untuk masa depan yang berkelanjutan.</p>
+</section>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Penyuluhan Pertanian. Semua hak dilindungi.</p>
+        <p>Penyuluh Kreatif dan Inovatif Polbangtan Yoma</p>
+        <p>Alamat: Jl. Kusumanegara No.2, Tahunan, Kec. Umbulharjo, Yogyakarta</p>
+        <p>Telepon: 0274-373479 | Fax: 0274-375528</p>
+    </footer>
+</body>
+</html>
